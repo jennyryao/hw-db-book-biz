@@ -1,0 +1,52 @@
+1. Create a list of the entities and properties of the book industry?
+
+Entity 1 - books
+Property 1 - book ID
+Property 2 - book name
+Property 3 - author
+Property 4 - genre
+Property 5 - editor
+Property 6 - publisher
+Property 7 - year
+
+Entity 2 - authors
+Property 1 - author ID
+Property 2 - author name
+
+Entity 3 - editors
+Property 1 - editor ID
+Property 2 - editor name
+
+Entity 4 - publishers
+Property 1 - publisher ID
+Property 2 - publisher name
+Property 3 - publisher location
+
+Entity 5 - orders
+Property 1 - order ID
+Property 2 - customer
+Property 3 - customer address
+
+Entity 6 - royalties
+Property 1 - book ID
+Property 2 - author ID
+Property 3 - royalty amount
+
+
+2. Create a list of the unique identifiers – primary keys.
+
+PK 1 - bookID
+PK 2 - authorID
+PK 3 - editorID
+PK 4 - publisherID
+PK 5 - orderID
+
+
+3. Create a list of the table relationships – the cardinality between entities. 
+
+authors, books, N:N
+authors, royalties, N:N
+books, royalties, 1:N
+books,  publishers, N:1
+editors, books, N:N
+books, orders, N:N
